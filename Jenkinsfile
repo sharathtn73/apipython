@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                python3 hello.py
+                sh 'python3 hello.py'
                 echo 'Hello JENKSINS World'
             }
         }
